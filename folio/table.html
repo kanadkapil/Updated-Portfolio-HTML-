@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-fixed/">
+    <link href="navbar-top-fixed.css" rel="stylesheet">
+    
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+        
+        body{
+          background-color: rgb(84, 84, 84);
+        }
+        .bg-c2{
+          background-color: rgb(139, 139, 139);
+        }
+  
+        .bg-c1{
+          background-color: rgb(118, 118, 118);
+        }
+        .bg-c3{
+          background-color: rgb(38, 38, 38);
+        }
+  
+        .text-custom {
+        font-size: 24px;
+        }
+        .zoom {
+      /* padding: 0px; */
+      /* background-color: blue; */
+      transition: transform .3s;
+      /* width: 0px; */
+      /* height: 0px; */
+      margin: 0 auto;
+    }
+    
+    .zoom:hover {
+      -ms-transform: scale(1.01); /* IE 9 */
+      -webkit-transform: scale(1.01); /* Safari 3-8 */
+      transform: scale(1.01); 
+    }
+      </style>
+</head>
+<body>
+
+
+
+    <!-- main form part  -->
+    <main>
+        <div class="container">
+
+
+
+            <form method="POST" action="insert.php" enctype="multipart/form-data">
+                  <!-- row 1 -->
+            <div class="contaner p-2 bg-transparen text-custom">
+                <div class="row p-5 bg-white bg-transparent ">
+                    <!-- personal  -->
+                    <div class="col-md-8 col-sm-12 p-2 zoom">
+                    <div class="container  bg-c2 p-5 shadow-lg" style ="border-radius: 10px;">
+                    <!-- rounded-3 -->
+                    <h1 class="mb-5"><details>Personal Details</details></h1>
+                    
+                        <div class="form-group">
+                            <label for="heroName">Hero Name:</label>
+                            <input type="text" class="form-control" id="heroName" name="heroName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="heroUniversity">University:</label>
+                            <input type="text" class="form-control" id="heroUniversity" name="heroUniversity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="heroheroUniversityYearName">University Year:</label>
+                            <input type="text" class="form-control" id="heroUniversityYear" name="heroUniversityYear" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="heroUniversitySubject">University Subject:</label>
+                            <input type="text" class="form-control" id="heroUniversitySubject" name="heroUniversitySubject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="heroJob"> Job:</label>
+                            <input type="text" class="form-control" id="heroJob" name="heroJob">
+                        </div>
+                        <div class="form-group">
+                            <label for="heroCompany">Company:</label>
+                            <input type="text" class="form-control" id="heroCompany" name="heroCompany">
+                        </div>
+                        <div class="form-group">
+                            <label for="heroProfession">Hero Profession:</label>
+                            <input type="text" class="form-control" id="heroProfession" name="heroProfession" required>
+                        </div>
+                    
+                        </div>
+                    </div>
+
+                    <!-- Mid  -->
+                    <!-- Img  -->
+                    <div class="col-md-4  col-sm-12  p-2 zoom ">
+                        <div class="container p-5  display-6 text-dark bg-c2 shadow-lg" style ="border-radius: 10px;">
+                        <!-- rounded-3 -->
+                            <h1>Inser Pic and CV <i class="fa  fa-ghost fa-flip"></i></h1> 
+                            <div class="form-group">
+                                <label for="heroImage">Hero Image:</label>
+                                <input type="file" class="form-control-file" id="heroImage" name="heroImage" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="heroCV">Hero CV:</label>
+                                <input type="file" class="form-control-file" id="heroCV" name="heroCV">
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+            <!-- row 1 ends -->
+
+
+
+              <!-- row 2 -->
+                <div class="contaner p-2 bg-transparen text-custom">
+                    <div class="row p-5 bg-white bg-transparent ">
+                        <!-- Details  -->
+                        <div class="col-md-4  col-sm-12  p-2 zoom ">
+                            <div class="container p-5  display-6 text-dark bg-c2 shadow-lg" style ="border-radius: 10px;">
+                            <!-- rounded-3 -->
+                            <div class="form-group">
+                                <label for="heroHobbies">Hero Hobbies:</label>
+                                <input type="text" class="form-control" id="heroHobbies" name="heroHobbies">
+                            </div>
+                            <div class="form-group">
+                                <label for="heroSkills">Hero Skills:</label>
+                                <textarea class="form-control" id="heroSkills" name="heroSkills" required></textarea>
+                            </div>
+                            </div>
+                        </div> 
+                        
+
+                        <!-- Mid  -->
+                        <!-- hobbies  -->
+                        <div class="col-md-8 col-sm-12 p-2 zoom">
+                            <div class="container  bg-c2 p-5 shadow-lg" style ="border-radius: 10px;">
+                            <!-- rounded-3 -->
+                            <div class="form-group">
+                                <label for="heroLongDetails">Hero Long Details:</label>
+                                <textarea class="form-control" id="heroLongDetails" name="heroLongDetails" required></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="heroShortDetails">Hero Short Details:</label>
+                                <textarea class="form-control" id="heroShortDetails" name="heroShortDetails" required></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="heroAbout">Hero About:</label>
+                                <textarea class="form-control" id="heroAbout" name="heroAbout" required></textarea>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+             <!-- row 2 ends -->
+
+
+            <!-- row 3 -->
+            <div class="contaner p-2 bg-transparen text-custom">
+                <div class="row p-5 bg-white bg-transparent ">
+                    <!-- Details  -->
+                    <div class="col-md-8 col-sm-12 p-2 zoom">
+                        <div class="container  bg-c2 p-5 shadow-lg" style ="border-radius: 10px;">
+                            <div class="form-group">
+                                <label for="heroLinkedin">Hero LinkedIn:</label>
+                                <input type="text" class="form-control" id="heroLinkedin" name="heroLinkedin">
+                              </div>
+                              <div class="form-group">
+                                <label for="heroFacebook">Hero Facebook:</label>
+                                <input type="text" class="form-control" id="heroFacebook" name="heroFacebook">
+                              </div>
+                              <div class="form-group">
+                                <label for="heroMobile">Hero Mobile:</label>
+                                <input type="text" class="form-control" id="heroMobile" name="heroMobile">
+                              </div>
+                              <div class="form-group">
+                                <label for="heroInsta">Hero Instagram:</label>
+                                <input type="text" class="form-control" id="heroInsta" name="heroInsta">
+                              </div>
+                              <div class="form-group">
+                                <label for="heroGmail">Hero Gmail:</label>
+                                <input type="email" class="form-control" id="heroGmail" name="heroGmail">
+                              </div>
+                              <div class="form-group">
+                                <label for="heroGithub">Hero Git:</label>
+                                <input type="text" class="form-control" id="heroGithub" name="heroGithub">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- row 3 ends -->
+
+            <div class="container mb-5"><center><button type="submit" class="btn btn-outline-dark ">Insert</button>
+            </center></div>
+            </form>
+
+
+
+
+
+
+        </div>
+    </main>
+    <!-- main form part ends  -->
+
+
+
+</body>
+</html>
